@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oleg Kiryanov — Unity Developer</title>
+<meta name="description" content="Портфолио Олега Кирьянова, Unity-разработчика: PC, мобильные игры, WebGL.">
+<meta property="og:title" content="Oleg Kiryanov — Unity Developer">
+<meta property="og:description" content="Портфолио Unity-разработчика: PC, мобильные игры, WebGL.">
+<meta property="og:image" content="https://xavadon.github.io/assets/media/gas-station-case.jpg">
+<meta property="og:url" content="https://xavadon.github.io/">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="brand">
+    <a href="#top" id="top" data-ru="Олег Кирьянов" data-en="Oleg Kiryanov">Олег Кирьянов</a>
+  </div>
+  <nav class="nav">
+    <a href="#about" data-ru="Обо мне" data-en="About">Обо мне</a>
+    <a href="#pc" data-ru="PC-игры" data-en="PC Games">PC-игры</a>
+    <a href="#mobile" data-ru="Мобильные" data-en="Mobile">Мобильные</a>
+    <a href="#webgl" data-ru="WebGL" data-en="WebGL">WebGL</a>
+    <a href="#solo" data-ru="Соло" data-en="Solo">Соло</a>
+    <a href="#contact" data-ru="Контакты" data-en="Contact">Контакты</a>
+  </nav>
+  <div class="controls">
+    <button id="lang-toggle" aria-label="Switch to English">EN</button>
+    <button id="theme-toggle" aria-label="Toggle theme">◑</button>
+  </div>
+</header>
+
+<main>
+
+<section id="about" class="hero">
+  <div class="hero-text">
+  <h1 data-ru="Unity-разработчик" data-en="Unity Developer">Unity-разработчик</h1>
+  <p class="lead" data-ru="Привет. Меня зовут Олег Кирьянов, я Unity-разработчик. Делаю игры на Unity/C# для PC, мобильных платформ и WebGL." data-en="Hi. I'm Oleg Kiryanov, a Unity developer. I build games in Unity/C# for PC, mobile and WebGL.">Привет. Меня зовут Олег Кирьянов, я Unity-разработчик. Делаю игры на Unity/C# для PC, мобильных платформ и WebGL.</p>
+  <p class="sub" data-ru="Ниже — коммерческие проекты: хоррор в Steam, мобильные игры под Android и iOS, порты под Яндекс Игры. У каждого проекта написано, что делал я и кто делал остальное." data-en="Below are commercial projects: a horror game on Steam, mobile games for Android and iOS, ports to Yandex Games. Each one says what I did and who did the rest.">Ниже — коммерческие проекты: хоррор в Steam, мобильные игры под Android и iOS, порты под Яндекс Игры. У каждого проекта написано, что делал я и кто делал остальное.</p>
+  </div>
+  <figure class="hero-img">
+    <img src="assets/media/me.jpg" alt="Олег Кирьянов">
+  </figure>
+</section>
+
+<section id="pc" class="group">
+  <h2 data-ru="Коммерческие PC-игры" data-en="Commercial PC Games">Коммерческие PC-игры</h2>
+
+  <article class="project" data-steam="3902800">
+    <header>
+      <h3>HERROR: Gas Station Case</h3>
+      <p class="meta" data-ru="Herror · в проекте с июня 2025 · Релиз: 11 августа 2026" data-en="Herror · on the project since June 2025 · Released: August 11, 2026">Herror · в проекте с июня 2025 · Релиз: 11 августа 2026</p>
+    </header>
+    <img src="assets/media/gas-station-case.jpg" alt="HERROR: Gas Station Case" loading="lazy">
+    <p data-ru="Сюжетный хоррор от первого лица: ночная смена на заправке в Огайо 1999 года. 11 эпизодов, 73 игровых состояния, 11 мини-игр рабочей смены, 13 языков. 23 000+ вишлистов до релиза." data-en="First-person story-driven horror: a night shift at a gas station in 1999 Ohio. 11 episodes, 73 game states, 11 work-shift minigames, 13 languages. 23,000+ wishlists before release.">Сюжетный хоррор от первого лица: ночная смена на заправке в Огайо 1999 года. 11 эпизодов, 73 игровых состояния, 11 мини-игр рабочей смены, 13 языков. 23 000+ вишлистов до релиза.</p>
+    <p class="role" data-ru="Роль: Unity-разработчик. Команда — 5 человек, программистов двое. Архитектуру (сервис-локатор и эпизоды из последовательности состояний) выбрал ведущий программист, я её реализовывал: написал около половины из 22 сервисов — сохранения, сцены, диалоги, субтитры, пауза, окна, Steam и достижения." data-en="Role: Unity developer. Team of 5, two of them programmers. The architecture (a service locator plus episodes built from state sequences) was chosen by the lead programmer; I implemented it and wrote about half of the 22 services — saves, scenes, dialogue, subtitles, pause, windows, Steam and achievements.">Роль: Unity-разработчик. Команда — 5 человек, программистов двое. Архитектуру (сервис-локатор и эпизоды из последовательности состояний) выбрал ведущий программист, я её реализовывал: написал около половины из 22 сервисов — сохранения, сцены, диалоги, субтитры, пауза, окна, Steam и достижения.</p>
+    <p class="role" data-ru="Геймплей: взаимодействие через рейкасты по слоям с контекстными подсказками, триггеры по видимости (пирамида камеры плюс луч на перекрытие), мини-игры смены, поворот головы и корпуса NPC к собеседнику на Animation Rigging, скримеры в состояниях эпизодов на UniTask, сборка катсцен на Timeline." data-en="Gameplay: layer-based raycast interaction with context prompts, visibility triggers (camera frustum plus an occlusion ray), work-shift minigames, NPC head and torso turning toward the speaker via Animation Rigging, scares inside episode states on UniTask, cutscene assembly in Timeline.">Геймплей: взаимодействие через рейкасты по слоям с контекстными подсказками, триггеры по видимости (пирамида камеры плюс луч на перекрытие), мини-игры смены, поворот головы и корпуса NPC к собеседнику на Animation Rigging, скримеры в состояниях эпизодов на UniTask, сборка катсцен на Timeline.</p>
+    <p class="role" data-ru="Инструменты редактора: автосборка NPC, выгрузка локализации из Google Sheets, свой бутстрап и переключатель сцен, автогенерация класса со ссылками на Resources, трекер играющих AudioSource." data-en="Editor tools: one-click NPC setup, localization export from Google Sheets, custom bootstrap and scene switcher, a generated class with Resources references, a tracker of playing AudioSources.">Инструменты редактора: автосборка NPC, выгрузка локализации из Google Sheets, свой бутстрап и переключатель сцен, автогенерация класса со ссылками на Resources, трекер играющих AudioSource.</p>
+    <p class="role" data-ru="Ещё: чекпоинты с сохранением прогресса, поддержка геймпада на Input System с навигацией по UI и подменой глифов под устройство ввода, пост-процессинг и свет под тёмные сцены (URP)." data-en="Also: checkpoints with progress saving, gamepad support on the Input System with UI navigation and device-specific button glyphs, post-processing and lighting for dark scenes (URP).">Ещё: чекпоинты с сохранением прогресса, поддержка геймпада на Input System с навигацией по UI и подменой глифов под устройство ввода, пост-процессинг и свет под тёмные сцены (URP).</p>
+    <div class="shots">
+      <img src="assets/steam/3902800/shot-1.jpg" alt="HERROR: Gas Station Case" loading="lazy">
+      <img src="assets/steam/3902800/shot-2.jpg" alt="HERROR: Gas Station Case" loading="lazy">
+    </div>
+    <p class="links"><a href="https://store.steampowered.com/app/3902800/HERROR_Gas_Station_Case/" target="_blank" rel="noopener">Steam →</a></p>
+  </article>
+
+  <article class="project" data-steam="4250780">
+    <header>
+      <h3>Prison of Doubles</h3>
+      <p class="meta" data-ru="Herror · Релиз: 2027" data-en="Herror · Release: 2027">Herror · Релиз: 2027</p>
+    </header>
+    <img src="assets/steam/4250780/header.jpg" alt="Prison of Doubles" loading="lazy">
+    <p data-ru="Хоррор для 1–4 игроков: тюремный надзиратель проверяет новых заключённых и ищет среди них двойников — паразитов, притворяющихся людьми." data-en="A 1–4 player horror game: a prison intake guard screens new inmates for doubles — parasites pretending to be human.">Хоррор для 1–4 игроков: тюремный надзиратель проверяет новых заключённых и ищет среди них двойников — паразитов, притворяющихся людьми.</p>
+    <div class="shots">
+      <img src="assets/steam/4250780/shot-1.jpg" alt="Prison of Doubles" loading="lazy">
+      <img src="assets/steam/4250780/shot-2.jpg" alt="Prison of Doubles" loading="lazy">
+    </div>
+    <p class="links"><a href="https://store.steampowered.com/app/4250780/" target="_blank" rel="noopener">Steam →</a></p>
+  </article>
+
+  <article class="project">
+    <header>
+      <h3>Sent to Death</h3>
+      <p class="meta" data-ru="Herror · Dungeon crawler · в разработке, публично не выпущен" data-en="Herror · Dungeon crawler · in development, not publicly released">Herror · Dungeon crawler · в разработке, публично не выпущен</p>
+    </header>
+    <p class="role" data-ru="Роль: единолично веду клиент, архитектура моя. Корневой scope на приложение и дочерние на сцены, порядок инициализации задан явно в точке входа, EditMode-тесты на трёх сборках." data-en="Role: sole client developer, the architecture is mine. A root scope for the app and child scopes for scenes, explicit initialization order at the entry point, EditMode tests across three assemblies.">Роль: единолично веду клиент, архитектура моя. Корневой scope на приложение и дочерние на сцены, порядок инициализации задан явно в точке входа, EditMode-тесты на трёх сборках.</p>
+    <p class="role" data-ru="Перевёл сцену боя с 3D на 2D-композицию с кастомным шейдером деформации спрайтов, пишу инструменты редактора." data-en="Moved the combat scene from 3D to a 2D composition with a custom sprite-deformation shader; I write the editor tools.">Перевёл сцену боя с 3D на 2D-композицию с кастомным шейдером деформации спрайтов, пишу инструменты редактора.</p>
+  </article>
+</section>
+
+<section id="mobile" class="group">
+  <h2 data-ru="Мобильные игры" data-en="Mobile Games">Мобильные игры</h2>
+
+  <div class="intro">
+    <p class="meta" data-ru="PixUp Games · Middle Unity Developer · апрель 2023 — март 2025" data-en="PixUp Games · Middle Unity Developer · April 2023 — March 2025">PixUp Games · Middle Unity Developer · апрель 2023 — март 2025</p>
+    <p data-ru="Casual, hyper casual и midcore-игры под Android и iOS, участие в 3 релизах. Работали с издателем Freeplay, готовили проекты к софт-лаунчу." data-en="Casual, hyper casual and midcore games for Android and iOS, 3 releases. Worked with the publisher Freeplay and prepared projects for soft launch.">Casual, hyper casual и midcore-игры под Android и iOS, участие в 3 релизах. Работали с издателем Freeplay, готовили проекты к софт-лаунчу.</p>
+    <p class="role" data-ru="Интеграции: In-App Purchases, Firebase Analytics, GameAnalytics, рекламные SDK (AdMob, Unity Ads). Addressables — для ускорения загрузки и фоновой подкачки ассетов." data-en="Integrations: In-App Purchases, Firebase Analytics, GameAnalytics, ad SDKs (AdMob, Unity Ads). Addressables for faster loading and background asset streaming.">Интеграции: In-App Purchases, Firebase Analytics, GameAnalytics, рекламные SDK (AdMob, Unity Ads). Addressables — для ускорения загрузки и фоновой подкачки ассетов.</p>
+  </div>
+
+  <article class="project">
+    <header>
+      <h3>Puzzle Journeys</h3>
+      <p class="meta" data-ru="PixUp Games · Издатель: Freeplay" data-en="PixUp Games · Publisher: Freeplay">PixUp Games · Издатель: Freeplay</p>
+    </header>
+    <img class="tall" src="assets/media/puzzle-journeys.gif" alt="Puzzle Journeys" loading="lazy">
+    <p data-ru="Мобильная пазл-игра под Android и iOS, сделана с нуля." data-en="A mobile puzzle game for Android and iOS, built from scratch.">Мобильная пазл-игра под Android и iOS, сделана с нуля.</p>
+    <p class="role" data-ru="Покупки — через пакет из 8 SDK от издателя. Готовили софт-лаунч: закупали 1–2 тыс. установок, смотрели retention, CPI и конверсию." data-en="In-app purchases through the publisher's bundle of 8 SDKs. Soft launch: we bought 1–2k installs and tracked retention, CPI and conversion.">Покупки — через пакет из 8 SDK от издателя. Готовили софт-лаунч: закупали 1–2 тыс. установок, смотрели retention, CPI и конверсию.</p>
+    <p class="links"><a href="https://drive.google.com/file/d/10xOQF4iIZ7VnjAXviTTNyt8PC0cGMiZQ/view" target="_blank" rel="noopener" data-ru="Демо →" data-en="Demo →">Демо →</a></p>
+  </article>
+</section>
+
+<section id="webgl" class="group">
+  <h2 data-ru="Порты под WebGL" data-en="WebGL Ports">Порты под WebGL</h2>
+
+  <div class="intro">
+    <p class="meta" data-ru="Redbook Games · Junior Unity Developer · март 2022 — апрель 2023" data-en="Redbook Games · Junior Unity Developer · March 2022 — April 2023">Redbook Games · Junior Unity Developer · март 2022 — апрель 2023</p>
+    <p data-ru="Портировал готовые мобильные проекты из Google Play под Яндекс Игры: 10 проектов за 14 месяцев, все прошли модерацию." data-en="Ported finished Google Play projects to Yandex Games: 10 projects in 14 months, all passed moderation.">Портировал готовые мобильные проекты из Google Play под Яндекс Игры: 10 проектов за 14 месяцев, все прошли модерацию.</p>
+    <p class="role" data-ru="После порта ломался визуал, падал FPS, появлялись статтеры и долгая загрузка, звук ломался из-за множества AudioSource. Это и чинил." data-en="After porting, visuals broke, FPS dropped, stutters and long loading appeared, and audio broke under too many AudioSources. That's what I fixed.">После порта ломался визуал, падал FPS, появлялись статтеры и долгая загрузка, звук ломался из-за множества AudioSource. Это и чинил.</p>
+    <p class="role" data-ru="Оптимизация: Object Pooling, батчинг, меньше аллокаций и нагрузки на GC, укладка в лимиты памяти и времени загрузки браузера. Писал инструменты редактора для геймдизайнеров — сборку уровней и настройку контента они закрывали без программиста." data-en="Optimization: object pooling, batching, fewer allocations and less GC pressure, fitting into browser memory and loading-time limits. Built editor tools for game designers so they could assemble levels and tune content without a programmer.">Оптимизация: Object Pooling, батчинг, меньше аллокаций и нагрузки на GC, укладка в лимиты памяти и времени загрузки браузера. Писал инструменты редактора для геймдизайнеров — сборку уровней и настройку контента они закрывали без программиста.</p>
+    <p class="links"><a href="https://drive.google.com/drive/folders/19lCRm7CkI83IPtXn5SZiZ8QB_FllPfOn" target="_blank" rel="noopener" data-ru="Все демо →" data-en="All demos →">Все демо →</a></p>
+  </div>
+
+  <div class="grid">
+    <figure class="card">
+      <img src="assets/media/car-racing.gif" alt="Car Racing" loading="lazy">
+      <figcaption>
+        <strong>Car Racing</strong>
+        <span data-ru="Гонки" data-en="Racing">Гонки</span>
+        <a href="https://drive.google.com/file/d/1xD-cT35ycWSrvVYQkyNcQ-WoUZhW-A4N/view" target="_blank" rel="noopener" data-ru="Демо →" data-en="Demo →">Демо →</a>
+      </figcaption>
+    </figure>
+    <figure class="card">
+      <img src="assets/media/chess.gif" alt="Chess Roguelike" loading="lazy">
+      <figcaption>
+        <strong>Chess Roguelike</strong>
+        <span data-ru="Рогалик" data-en="Roguelike">Рогалик</span>
+        <a href="https://drive.google.com/file/d/11RM94xB83tWrzQJ7W9fC_8DjE0uCXmOh/view" target="_blank" rel="noopener" data-ru="Демо →" data-en="Demo →">Демо →</a>
+      </figcaption>
+    </figure>
+    <figure class="card">
+      <img src="assets/media/tower-defence.gif" alt="Tower Defence" loading="lazy">
+      <figcaption>
+        <strong>Tower Defence</strong>
+        <span>Tower defence</span>
+        <a href="https://drive.google.com/file/d/1kfyKHv223HEnXN3IkCeXZaEvyvAG0yF2/view" target="_blank" rel="noopener" data-ru="Демо →" data-en="Demo →">Демо →</a>
+      </figcaption>
+    </figure>
+    <figure class="card">
+      <img src="assets/media/gym-game.gif" alt="Gym Game" loading="lazy">
+      <figcaption>
+        <strong>Gym Game</strong>
+        <span data-ru="Симулятор" data-en="Simulator">Симулятор</span>
+        <a href="https://drive.google.com/file/d/1LJz5Tg5fEiYaVS7LywccbhGo7rVnrtnq/view" target="_blank" rel="noopener" data-ru="Демо →" data-en="Demo →">Демо →</a>
+      </figcaption>
+    </figure>
+    <figure class="card">
+      <img src="assets/media/cooking-runner.gif" alt="Cooking Runner" loading="lazy">
+      <figcaption>
+        <strong>Cooking Runner</strong>
+        <span data-ru="Гиперказуал" data-en="Hypercasual">Гиперказуал</span>
+        <a href="https://drive.google.com/file/d/1hTIZgKvucym0bAH_RyupX4TY7PZFFCkY/view" target="_blank" rel="noopener" data-ru="Демо →" data-en="Demo →">Демо →</a>
+      </figcaption>
+    </figure>
+    <figure class="card">
+      <img src="assets/media/titans-runner.gif" alt="Titans Runner" loading="lazy">
+      <figcaption>
+        <strong>Titans Runner</strong>
+        <span data-ru="Раннер" data-en="Runner">Раннер</span>
+        <a href="https://drive.google.com/file/d/1PIACaXziOJ7mFevQ9SQVQi8MJl3pRiMf/view" target="_blank" rel="noopener" data-ru="Демо →" data-en="Demo →">Демо →</a>
+      </figcaption>
+    </figure>
+    <figure class="card">
+      <img src="assets/media/be-a-president.gif" alt="Be A President" loading="lazy">
+      <figcaption>
+        <strong>Be A President</strong>
+        <span data-ru="Симулятор" data-en="Simulator">Симулятор</span>
+        <a href="https://drive.google.com/file/d/1_T1Anm8dbjRCoe8uRy6wmVBYds0AwtSM/view" target="_blank" rel="noopener" data-ru="Демо →" data-en="Demo →">Демо →</a>
+      </figcaption>
+    </figure>
+    <figure class="card">
+      <img src="assets/media/garbage-collector.gif" alt="Garbage Collector" loading="lazy">
+      <figcaption>
+        <strong>Garbage Collector</strong>
+        <span data-ru="Аркада" data-en="Arcade">Аркада</span>
+        <a href="https://drive.google.com/file/d/1baFIJbiZpVDIawVcsPAo_6HcdKHA_hnw/view" target="_blank" rel="noopener" data-ru="Демо →" data-en="Demo →">Демо →</a>
+      </figcaption>
+    </figure>
+    <figure class="card">
+      <img src="assets/media/kraken.gif" alt="Kraken Game" loading="lazy">
+      <figcaption>
+        <strong>Kraken Game</strong>
+        <span data-ru="Аркада" data-en="Arcade">Аркада</span>
+        <a href="https://drive.google.com/file/d/1WC0cM6zHTvJIziNM_2HkMOMFgu2caNGT/view" target="_blank" rel="noopener" data-ru="Демо →" data-en="Demo →">Демо →</a>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="solo" class="group">
+  <h2 data-ru="Соло" data-en="Solo">Соло</h2>
+
+  <div class="grid">
+    <figure class="card">
+      <img src="assets/media/meme-shooting.gif" alt="Meme Shooting" loading="lazy">
+      <figcaption>
+        <strong>Meme Shooting</strong>
+        <span data-ru="Шутер · соло-проект" data-en="Shooter · solo project">Шутер · соло-проект</span>
+        <a href="https://drive.google.com/file/d/1w1LFBCnw9893hz15q50KRdWOmh_NdQxh/view" target="_blank" rel="noopener" data-ru="Демо →" data-en="Demo →">Демо →</a>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="contact" class="group contact">
+  <h2 data-ru="Контакты" data-en="Contact">Контакты</h2>
+  <ul class="contact-list">
+    <li><span>Telegram</span><a href="https://t.me/jsfmv" target="_blank" rel="noopener">@jsfmv</a></li>
+    <li><span>Email</span><a href="mailto:www.olegwork@gmail.com">www.olegwork@gmail.com</a></li>
+    <li><span>GitHub</span><a href="https://github.com/Xavadon" target="_blank" rel="noopener">github.com/Xavadon</a></li>
+  </ul>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>© <span id="year">2026</span> <span data-ru="Олег Кирьянов" data-en="Oleg Kiryanov">Олег Кирьянов</span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
